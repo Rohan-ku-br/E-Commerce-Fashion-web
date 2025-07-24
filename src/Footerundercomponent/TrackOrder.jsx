@@ -19,18 +19,16 @@ const TrackOrder = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-6 sm:p-8"
-        >
-          {/* Order Tracking Form (Static) */}
+          className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-6 sm:p-8" >
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Order Details
             </h3>
             <div className="space-y-6">
               <div>
                 <label
                   htmlFor="orderId"
-                  className="block text-sm font-medium text-gray-700 mb-2"
+                  className="block text-lg font-medium text-gray-700 mb-2"
                 >
                   Order ID
                 </label>
@@ -44,14 +42,14 @@ const TrackOrder = () => {
                   placeholder="Enter your order ID"
                   aria-describedby="orderId-description"
                 />
-                <p id="orderId-description" className="text-sm text-gray-500 mt-1">
+                <p id="orderId-description" className="text-lg text-gray-500 mt-1">
                   Your order ID can be found in your confirmation email.
                 </p>
               </div>
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 mb-2"
+                  className="block text-lg font-medium text-gray-700 mb-2"
                 >
                   Email
                 </label>
@@ -65,20 +63,20 @@ const TrackOrder = () => {
                   placeholder="Enter your email"
                   aria-describedby="email-description"
                 />
-                <p id="email-description" className="text-sm text-gray-500 mt-1">
+                <p id="email-description" className="text-lg text-gray-500 mt-1">
                   Use the email associated with your order.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Mock Tracking Status */}
+         
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Order Status
             </h3>
             <div className="bg-green-100 text-green-700 p-4 rounded-lg">
-              <p className="text-lg font-semibold">Order Shipped</p>
+              <p className="text-xl font-semibold">Order Shipped</p>
               <p className="text-sm mt-1">
                 Your order has been shipped on July 22, 2025, and is expected to arrive by July 27, 2025.
               </p>
