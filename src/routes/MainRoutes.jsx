@@ -13,6 +13,7 @@ import Navbar from '../component/nav/Navbar'
 import Footer from '../pages/Footer'
 import Contact from '../Footerundercomponent/Contact'
 import TrackOrder from '../Footerundercomponent/TrackOrder'
+import Cart from '../component/nav/Cart'
 
 
 const MainRoutes = () => {
@@ -32,6 +33,7 @@ const MainRoutes = () => {
         <Route path='/productInfo' element={<ProductInfo/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/trackOrder' element={<TrackOrder/>}/>
+        <Route path='/cart' element={<Cart/>}/>
     </Routes>
     <Footer/>
     </>
