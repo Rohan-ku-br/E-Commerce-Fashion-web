@@ -3,41 +3,41 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
 // Sample men's fashion product data (replace with your API data)
-const menProducts = [
+const kidsProducts = [
   {
     id: 1,
-    name: "Men's Classic Shirt",
+    name: "Fancy Boys Top & Bottom Sets",
     description: "A timeless cotton shirt perfect for formal and casual occasions.",
     price: "$29.99",
     oldPrice: "$50.00",
-    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/443187772/gtjgk_512.avif?width=512",
     alt: "Men's Classic Shirt",
   },
   {
     id: 2,
-    name: "Slim Fit Jeans",
+    name: "KEESOR Round Neck PRINTED T-shirt with Shorts | Boys Casual T-shirt Shorts Set",
     description: "Comfortable and stylish denim jeans for everyday wear.",
     price: "$49.99",
     oldPrice: "$80.00",
-    image: "https://images.unsplash.com/photo-1602293589930-45aad59ba90c?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/502686128/u1etp_512.avif?width=512",
     alt: "Slim Fit Jeans",
   },
   {
     id: 3,
-    name: "Leather Jacket",
+    name: "Kidis Land Stylish Kids Clothing Sets",
     description: "Premium leather jacket for a bold and rugged look.",
     price: "$99.99",
     oldPrice: "$150.00",
-    image: "https://images.unsplash.com/photo-1551028719-6e3c8b6b6f9b?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/554273347/aylcc_512.avif?width=512",
     alt: "Leather Jacket",
   },
   {
     id: 4,
-    name: "Casual Sneakers",
+    name: "Boys combo set",
     description: "Versatile sneakers for comfort and style all day long.",
     price: "$59.99",
     oldPrice: "$100.00",
-    image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/543179963/g5poi_512.avif?width=512",
     alt: "Casual Sneakers",
   },
 ];
@@ -46,12 +46,10 @@ const Kids = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    console.log("MenFashionProducts rendered"); // Debugging
-    // Simulate API fetch
     const fetchProducts = async () => {
       try {
-        setProducts(menProducts);
-        console.log("Products loaded:", menProducts); // Debugging
+        setProducts(kidsProducts);
+        console.log("Products loaded:", kidsProducts); 
       } catch (error) {
         console.error("Error fetching men's products:", error);
       }
@@ -98,7 +96,7 @@ const Kids = () => {
                       alt={`Image of ${product.name}`}
                       className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
                       loading="lazy"
-                      onLoad={() => console.log(`Image loaded: ${product.image}`)} // Debugging
+                      onLoad={() => console.log(`Image loaded: ${product.image}`)} 
                       onError={(e) => {
                         e.target.src = "https://via.placeholder.com/400x300?text=Product+Not+Found";
                         console.warn(`Failed to load image: ${product.image}`);

@@ -31,7 +31,7 @@ const ProductFeatures = () => {
       description: "Natural and organic beauty products",
     },
     {
-      id: "home-kitchen",
+      id: "home&kitchen",
       name: "Home & Kitchen",
       image:
         "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&q=80&w=500",

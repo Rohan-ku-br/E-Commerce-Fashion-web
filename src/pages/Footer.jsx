@@ -187,7 +187,7 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink
-                  to="/track-order"
+                  to="/trackOrder"
                   className="hover:text-green-300 transition-colors duration-300"
                   aria-label="Track Your Order"
                 >
@@ -221,7 +221,7 @@ const Footer = () => {
               />
               <button
                 onClick={handleSubmit}
-                className="mt-2 sm:mt-0 sm:ml-2 px-4 py-2 bg-green-600 text-white rounded-r-md hover:bg-green-500 transition-colors duration-300"
+                className="mt-2 sm:mt-0 sm:ml-2 px-4 py-2 jelly-hover bg-green-600 text-white rounded-r-md hover:bg-green-500 transition-colors duration-300"
                 aria-label="Subscribe to newsletter"
               >
                 <FaEnvelope className="inline mr-2" />

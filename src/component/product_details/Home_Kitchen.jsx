@@ -2,42 +2,41 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-// Sample men's fashion product data (replace with your API data)
-const menProducts = [
+const Home_KitchenProducts = [
   {
     id: 1,
-    name: "Men's Classic Shirt",
+    name: "Ss knife set with chopping board",
     description: "A timeless cotton shirt perfect for formal and casual occasions.",
     price: "$29.99",
     oldPrice: "$50.00",
-    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/354643588/mmxek_512.avif?width=512",
     alt: "Men's Classic Shirt",
   },
   {
     id: 2,
-    name: "Slim Fit Jeans",
+    name: "Compact Chopper with Blades effortlessly Chopping Big Size Kitchen",
     description: "Comfortable and stylish denim jeans for everyday wear.",
     price: "$49.99",
     oldPrice: "$80.00",
-    image: "https://images.unsplash.com/photo-1602293589930-45aad59ba90c?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/224092807/bjr0t_512.avif?width=512",
     alt: "Slim Fit Jeans",
   },
   {
     id: 3,
-    name: "Leather Jacket",
+    name: "WINGER Combo of straight peeler and and 2 vegetable cutter 2 in 1 Vegetable & Fruit Multi Cutter & Peeler",
     description: "Premium leather jacket for a bold and rugged look.",
     price: "$99.99",
     oldPrice: "$150.00",
-    image: "https://images.unsplash.com/photo-1551028719-6e3c8b6b6f9b?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/331337160/enuzv_512.avif?width=512",
     alt: "Leather Jacket",
   },
   {
     id: 4,
-    name: "Casual Sneakers",
+    name: "Trendy chopping board/cutting board/wood cutting board",
     description: "Versatile sneakers for comfort and style all day long.",
     price: "$59.99",
     oldPrice: "$100.00",
-    image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/393940265/dwmqx_512.avif?width=512",
     alt: "Casual Sneakers",
   },
 ];
@@ -46,12 +45,11 @@ const Home_Kitchen = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    console.log("MenFashionProducts rendered"); // Debugging
-    // Simulate API fetch
+   
     const fetchProducts = async () => {
       try {
-        setProducts(menProducts);
-        console.log("Products loaded:", menProducts); // Debugging
+        setProducts(Home_KitchenProducts);
+        console.log("Products loaded:", Home_KitchenProducts); // Debugging
       } catch (error) {
         console.error("Error fetching men's products:", error);
       }

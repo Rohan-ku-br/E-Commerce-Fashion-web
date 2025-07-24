@@ -11,6 +11,8 @@ import Home from '../pages/Home';
 import ProductInfo from '../pages/ProductInfo'
 import Navbar from '../component/nav/Navbar'
 import Footer from '../pages/Footer'
+import Contact from '../Footerundercomponent/Contact'
+import TrackOrder from '../Footerundercomponent/TrackOrder'
 
 
 const MainRoutes = () => {
@@ -28,6 +30,8 @@ const MainRoutes = () => {
         <Route path='/auth' element={<Auth/>}/>
         <Route path='/productFeatures' element={<ProductFeatures/>}/>
         <Route path='/productInfo' element={<ProductInfo/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/trackOrder' element={<TrackOrder/>}/>
     </Routes>
     <Footer/>
     </>

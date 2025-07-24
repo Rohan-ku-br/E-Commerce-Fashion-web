@@ -2,33 +2,32 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-// Sample men's fashion product data (replace with your API data)
-const menProducts = [
+const womenProducts = [
   {
     id: 1,
-    name: "Men's Classic Shirt",
+    name: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set",
     description: "A timeless cotton shirt perfect for formal and casual occasions.",
     price: "$29.99",
     oldPrice: "$50.00",
-    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80",
-    alt: "Men's Classic Shirt",
+    image: "https://images.meesho.com/images/products/441070939/rzuyp_512.avif?width=512",
+    alt: "Women's Classic Shirt",
   },
   {
     id: 2,
-    name: "Slim Fit Jeans",
+    name: "KURTI",
     description: "Comfortable and stylish denim jeans for everyday wear.",
     price: "$49.99",
     oldPrice: "$80.00",
-    image: "https://images.unsplash.com/photo-1602293589930-45aad59ba90c?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/191005346/mocgn_512.avif?width=360",
     alt: "Slim Fit Jeans",
   },
   {
     id: 3,
-    name: "Leather Jacket",
+    name: "Rayon Printed Kurta Set With Dupatta",
     description: "Premium leather jacket for a bold and rugged look.",
     price: "$99.99",
     oldPrice: "$150.00",
-    image: "https://images.unsplash.com/photo-1551028719-6e3c8b6b6f9b?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/519996287/y5mid_512.avif?width=512",
     alt: "Leather Jacket",
   },
   {
@@ -37,7 +36,7 @@ const menProducts = [
     description: "Versatile sneakers for comfort and style all day long.",
     price: "$59.99",
     oldPrice: "$100.00",
-    image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/397953982/lq6a2_512.avif?width=512",
     alt: "Casual Sneakers",
   },
 ];
@@ -48,8 +47,8 @@ const Women = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        setProducts(menProducts);
-        console.log("Products loaded:", menProducts); // Debugging
+        setProducts(womenProducts);
+        console.log("Products loaded:", womenProducts); 
       } catch (error) {
         console.error("Error fetching men's products:", error);
       }
@@ -62,7 +61,7 @@ const Women = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
-            Women's Fashion Collection
+            Men's Fashion Collection
           </h2>
           <p className="text-gray-700 max-w-3xl mx-auto text-lg sm:text-xl leading-relaxed">
             Discover stylish and high-quality men's fashion tailored to your lifestyle.
@@ -96,7 +95,7 @@ const Women = () => {
                       alt={`Image of ${product.name}`}
                       className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
                       loading="lazy"
-                      onLoad={() => console.log(`Image loaded: ${product.image}`)} // Debugging
+                      onLoad={() => console.log(`Image loaded: ${product.image}`)} 
                       onError={(e) => {
                         e.target.src = "https://via.placeholder.com/400x300?text=Product+Not+Found";
                         console.warn(`Failed to load image: ${product.image}`);

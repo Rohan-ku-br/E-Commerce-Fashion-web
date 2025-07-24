@@ -2,42 +2,41 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-// Sample men's fashion product data (replace with your API data)
-const menProducts = [
+const beautyProducts = [
   {
     id: 1,
-    name: "Men's Classic Shirt",
+    name: "All in one face makeup kit for women",
     description: "A timeless cotton shirt perfect for formal and casual occasions.",
     price: "$29.99",
     oldPrice: "$50.00",
-    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/463528812/eap3g_512.avif?width=512",
     alt: "Men's Classic Shirt",
   },
   {
     id: 2,
-    name: "Slim Fit Jeans",
+    name: "Dhyota Silicone Eyeliner Tool for Women – Multipurpose Eye Makeup Tool for Eyeliner",
     description: "Comfortable and stylish denim jeans for everyday wear.",
     price: "$49.99",
     oldPrice: "$80.00",
-    image: "https://images.unsplash.com/photo-1602293589930-45aad59ba90c?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/533957013/dh6bi_512.avif?width=512",
     alt: "Slim Fit Jeans",
   },
   {
     id: 3,
-    name: "Leather Jacket",
+    name: "Fixer Spary ,Primer,Conceller,Beauty Blinder ( puff )",
     description: "Premium leather jacket for a bold and rugged look.",
     price: "$99.99",
     oldPrice: "$150.00",
-    image: "https://images.unsplash.com/photo-1551028719-6e3c8b6b6f9b?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/425250690/rujzo_512.avif?width=512",
     alt: "Leather Jacket",
   },
   {
     id: 4,
-    name: "Casual Sneakers",
+    name: "Fixer Spray, Bottle Primer, Foundation, Compact Powder, Countour stick",
     description: "Versatile sneakers for comfort and style all day long.",
     price: "$59.99",
     oldPrice: "$100.00",
-    image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.meesho.com/images/products/515832624/qcqsf_512.avif?width=512",
     alt: "Casual Sneakers",
   },
 ];
@@ -46,12 +45,10 @@ const Beauty = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    console.log("MenFashionProducts rendered"); // Debugging
-    // Simulate API fetch
     const fetchProducts = async () => {
       try {
-        setProducts(menProducts);
-        console.log("Products loaded:", menProducts); // Debugging
+        setProducts(beautyProducts);
+        console.log("Products loaded:", beautyProducts); 
       } catch (error) {
         console.error("Error fetching men's products:", error);
       }
