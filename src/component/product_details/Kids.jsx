@@ -25,7 +25,7 @@ const kidsProducts = [
   {
     id: 3,
     name: "Kidis Land Stylish Kids Clothing Sets",
-    description: "Premium leather jacket for a bold and rugged look.",
+    description: "Premium kids cloting sets and style all day long",
     price: "$99.99",
     oldPrice: "$150.00",
     image: "https://images.meesho.com/images/products/554273347/aylcc_512.avif?width=512",

@@ -6,38 +6,43 @@ const Home_KitchenProducts = [
   {
     id: 1,
     name: "Ss knife set with chopping board",
-    description: "A timeless cotton shirt perfect for formal and casual occasions.",
+    description:
+      "Name : ss knife set with chopping board Color : Silver Material : Stainless Steel Net Quantity (N) : Pack Of 6 Product Breadth : 9 Cm Product Height : 1.5 Cm Product Length : 10 Cm Product Weight : 0.2 Type : Kitchen Knife Sets ss knife set with chopping board",
     price: "$29.99",
     oldPrice: "$50.00",
-    image: "https://images.meesho.com/images/products/354643588/mmxek_512.avif?width=512",
-    alt: "Men's Classic Shirt",
+    image:
+      "https://images.meesho.com/images/products/354643588/mmxek_512.avif?width=512",
+    alt: "Knife ",
   },
   {
     id: 2,
     name: "Compact Chopper with Blades effortlessly Chopping Big Size Kitchen",
-    description: "Comfortable and stylish denim jeans for everyday wear.",
+    description: "Chopper with Blades effortlessly Chopping Big Size Kitchen set with chopping board",
     price: "$49.99",
     oldPrice: "$80.00",
-    image: "https://images.meesho.com/images/products/224092807/bjr0t_512.avif?width=512",
-    alt: "Slim Fit Jeans",
+    image:
+      "https://images.meesho.com/images/products/224092807/bjr0t_512.avif?width=512",
+    alt: "compact Chopper",
   },
   {
     id: 3,
-    name: "WINGER Combo of straight peeler and and 2 vegetable cutter 2 in 1 Vegetable & Fruit Multi Cutter & Peeler",
-    description: "Premium leather jacket for a bold and rugged look.",
+    name: "WINGER Combo of straight peeler and and 2 vegetable cutter ",
+    description: "WINGER Combo of straight peeler and and 2 vegetable cutter 2 in 1 Vegetable & Fruit Multi Cutter & Peeler",
     price: "$99.99",
     oldPrice: "$150.00",
-    image: "https://images.meesho.com/images/products/331337160/enuzv_512.avif?width=512",
-    alt: "Leather Jacket",
+    image:
+      "https://images.meesho.com/images/products/331337160/enuzv_512.avif?width=512",
+    alt: "cutter",
   },
   {
     id: 4,
     name: "Trendy chopping board/cutting board/wood cutting board",
-    description: "Versatile sneakers for comfort and style all day long.",
+    description: "Trendy chopping board/cutting board/wood WINGER Combo of straight peeler and and 2 vegetable cutter 2 in 1 Vegetable & Fruit Multi Cutter & Peeler",
     price: "$59.99",
     oldPrice: "$100.00",
-    image: "https://images.meesho.com/images/products/393940265/dwmqx_512.avif?width=512",
-    alt: "Casual Sneakers",
+    image:
+      "https://images.meesho.com/images/products/393940265/dwmqx_512.avif?width=512",
+    alt: "cutting board",
   },
 ];
 
@@ -45,7 +50,6 @@ const Home_Kitchen = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-   
     const fetchProducts = async () => {
       try {
         setProducts(Home_KitchenProducts);
@@ -65,7 +69,8 @@ const Home_Kitchen = () => {
             Men's Fashion Collection
           </h2>
           <p className="text-gray-700 max-w-3xl mx-auto text-lg sm:text-xl leading-relaxed">
-            Discover stylish and high-quality men's fashion tailored to your lifestyle.
+            Discover stylish and high-quality men's fashion tailored to your
+            lifestyle.
           </p>
         </div>
         {products.length === 0 ? (
@@ -96,9 +101,12 @@ const Home_Kitchen = () => {
                       alt={`Image of ${product.name}`}
                       className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
                       loading="lazy"
-                      onLoad={() => console.log(`Image loaded: ${product.image}`)} // Debugging
+                      onLoad={() =>
+                        console.log(`Image loaded: ${product.image}`)
+                      } // Debugging
                       onError={(e) => {
-                        e.target.src = "https://via.placeholder.com/400x300?text=Product+Not+Found";
+                        e.target.src =
+                          "https://via.placeholder.com/400x300?text=Product+Not+Found";
                         console.warn(`Failed to load image: ${product.image}`);
                       }}
                     />

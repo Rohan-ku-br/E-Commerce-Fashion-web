@@ -14,6 +14,7 @@ import Footer from '../pages/Footer'
 import Contact from '../Footerundercomponent/Contact'
 import TrackOrder from '../Footerundercomponent/TrackOrder'
 import Cart from '../component/nav/Cart'
+import PageNotFound from '../pages/PageNotFound'
 
 
 const MainRoutes = () => {
@@ -34,6 +35,7 @@ const MainRoutes = () => {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/trackOrder' element={<TrackOrder/>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='*' element={<PageNotFound/>}/>
     </Routes>
     <Footer/>
     </>

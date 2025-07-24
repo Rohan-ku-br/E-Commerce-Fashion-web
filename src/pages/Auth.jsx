@@ -56,7 +56,7 @@ const Auth = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-100 to-purple-200 py-12 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-100 to-green-200 py-12 px-4">
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -132,7 +132,7 @@ const Auth = () => {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
             type="submit"
-            className="w-full bg-indigo-600 text-white py-3 rounded-md font-semibold hover:bg-indigo-700 transition duration-300"
+            className="w-full jelly-hover bg-indigo-600 text-white py-3 rounded-md font-semibold hover:bg-indigo-700 transition duration-300"
           >
             {isLogin ? 'Login' : 'Sign Up'}
           </motion.button>

@@ -15,7 +15,7 @@ const womenProducts = [
   {
     id: 2,
     name: "KURTI",
-    description: "Comfortable and stylish denim jeans for everyday wear.",
+    description: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set",
     price: "$49.99",
     oldPrice: "$80.00",
     image: "https://images.meesho.com/images/products/191005346/mocgn_512.avif?width=360",
@@ -24,7 +24,7 @@ const womenProducts = [
   {
     id: 3,
     name: "Rayon Printed Kurta Set With Dupatta",
-    description: "Premium leather jacket for a bold and rugged look.",
+    description: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set Rayon Printed Kurta Set With Dupatta",
     price: "$99.99",
     oldPrice: "$150.00",
     image: "https://images.meesho.com/images/products/519996287/y5mid_512.avif?width=512",
@@ -32,8 +32,8 @@ const womenProducts = [
   },
   {
     id: 4,
-    name: "Casual Sneakers",
-    description: "Versatile sneakers for comfort and style all day long.",
+    name: "Black Kurti",
+    description: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set Rayon Printed Kurta Set With Dupatta",
     price: "$59.99",
     oldPrice: "$100.00",
     image: "https://images.meesho.com/images/products/397953982/lq6a2_512.avif?width=512",

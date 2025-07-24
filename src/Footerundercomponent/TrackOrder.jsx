@@ -76,11 +76,11 @@ const TrackOrder = () => {
               Order Status
             </h3>
             <div className="bg-green-100 text-green-700 p-4 rounded-lg">
-              <p className="text-xl font-semibold">Order Shipped</p>
-              <p className="text-sm mt-1">
+              <p className="text-2xl font-semibold">Order Shipped</p>
+              <p className="text-lg mt-1">
                 Your order has been shipped on July 22, 2025, and is expected to arrive by July 27, 2025.
               </p>
-              <p className="text-sm mt-2">
+              <p className="text-lg mt-2">
                 Tracking Number:{" "}
                 <NavLink
                   to="/track-details/ORD123456789"
@@ -93,7 +93,7 @@ const TrackOrder = () => {
               </p>
             </div>
             <div className="mt-6 text-gray-600">
-              <p className="text-sm">
+              <p className="text-lg">
                 For further assistance, contact us at{" "}
                 <NavLink
                   to="/contact"
