@@ -10,7 +10,6 @@ const womenProducts = [
     price: "$29.99",
     oldPrice: "$50.00",
     image: "https://images.meesho.com/images/products/441070939/rzuyp_512.avif?width=512",
-    alt: "Women's Classic Shirt",
   },
   {
     id:42,
@@ -19,7 +18,6 @@ const womenProducts = [
     price: "$49.99",
     oldPrice: "$80.00",
     image: "https://images.meesho.com/images/products/191005346/mocgn_512.avif?width=360",
-    alt: "Slim Fit Jeans",
   },
   {
     id: 43,
@@ -28,7 +26,6 @@ const womenProducts = [
     price: "$99.99",
     oldPrice: "$150.00",
     image: "https://images.meesho.com/images/products/519996287/y5mid_512.avif?width=512",
-    alt: "Leather Jacket",
   },
   {
     id: 44,
@@ -37,8 +34,73 @@ const womenProducts = [
     price: "$59.99",
     oldPrice: "$100.00",
     image: "https://images.meesho.com/images/products/397953982/lq6a2_512.avif?width=512",
-    alt: "Casual Sneakers",
   },
+  {
+    id: 45,
+    name: "Women Wrinkle Crush Palazzo PLAZZO Pack of 2",
+    description: "Women Wrinkle Crush Palazzo PLAZZO Pack of 2 Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set Rayon Printed Kurta Set With Dupatta",
+    price: "$51.99",
+    oldPrice: "$100.00",
+    image: "https://images.meesho.com/images/products/412858576/ppa4d_512.avif?width=512",
+  },
+  {
+    id: 46,
+    name: "Stretch High Waisted ",
+    description: "Stretch High Waisted Two Button Up Flared Dobby Denim Skirt For Women & Girls Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set Rayon Printed Kurta Set With Dupatta",
+    price: "$29.99",
+    oldPrice: "$101.00",
+    image: "https://images.meesho.com/images/products/440343758/oxp3n_512.avif?width=512",
+  },
+  {
+    id: 47,
+    name: "Women's Cotton Printed Regular Fit Shorts",
+    description: "Women's Cotton Printed Regular Fit Shorts (Combo of 3).Regular Fit Cotton Short for Gym and Home Wear.(Combo Pack Of 3)",
+    price: "$32.99",
+    oldPrice: "$101.00",
+    image: "https://images.meesho.com/images/products/539830256/4njnn_512.avif?width=512",
+  },
+  {
+    id: 48,
+    name: "Soften High Waist Women denim Skirt ",
+    description: "Soften High Waist Women denim Skirt Stretch High Waisted Two Button Up Flared Dobby ",
+    price: "$63.99",
+    oldPrice: "$130.00",
+    image: "https://images.meesho.com/images/products/507671402/yb5xg_512.avif?width=512",
+  },
+  {
+    id: 49,
+    name: "Stylish gingham women skirt ",
+    description: "Soften High Waist Women denim Skirt Stretch High Waisted Two Button Up Flared Dobby ",
+    price: "$63.99",
+    oldPrice: "$130.00",
+    image: "https://images.meesho.com/images/products/336015586/s8quo_512.avif?width=512",
+  },
+  {
+    id: 111,
+    name: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set",
+    description: "A timeless cotton shirt perfect for formal and casual occasions.",
+    price: "$29.99",
+    oldPrice: "$50.00",
+    image: "https://images.meesho.com/images/products/441070939/rzuyp_512.avif?width=512",
+  },
+  {
+    id: 113,
+    name: "Stretch High Waisted ",
+    description: "Stretch High Waisted Two Button Up Flared Dobby Denim Skirt For Women & Girls Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set Rayon Printed Kurta Set With Dupatta",
+    price: "$29.99",
+    oldPrice: "$101.00",
+    image: "https://images.meesho.com/images/products/440343758/oxp3n_512.avif?width=512",
+  },
+  {
+    id:112,
+    name: "KURTI",
+    description: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set",
+    price: "$49.99",
+    oldPrice: "$80.00",
+    image: "https://images.meesho.com/images/products/191005346/mocgn_512.avif?width=360",
+  },
+ 
+
 ];
 
 const Women = () => {

@@ -92,7 +92,7 @@ const Wishlist = () => {
                         }}
                       />
                     </div>
-                    <div className="ml-4 sm:ml-6 flex-1">
+                    <div className="ml-4 sm:ml-6  flex-1">
                       <NavLink
                         to={`/productInfo/${item.id}`}
                         className="text-lg font-semibold text-gray-900 hover:text-green-600"
@@ -117,7 +117,7 @@ const Wishlist = () => {
           <div className="flex flex-col sm:flex-row justify-between gap-4">
             <NavLink
               to="/"
-              className="text-center bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300"
+              className="text-center bg-gray-200 jelly-hover text-gray-700 font-semibold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300"
               activeClassName="bg-gray-300"
               aria-label="Continue shopping"
             >
@@ -125,7 +125,7 @@ const Wishlist = () => {
             </NavLink>
             <NavLink
               to="/cart"
-              className="text-center bg-green-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors duration-300"
+              className="text-center bg-green-600 jelly-hover text-white font-semibold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors duration-300"
               activeClassName="bg-green-800"
               aria-label="View cart"
             >

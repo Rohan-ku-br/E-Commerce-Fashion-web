@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-// Sample men's fashion product data (replace with your API data)
 const kidsProducts = [
   {
     id: 31,
@@ -11,7 +10,6 @@ const kidsProducts = [
     price: "$29.99",
     oldPrice: "$50.00",
     image: "https://images.meesho.com/images/products/443187772/gtjgk_512.avif?width=512",
-    alt: "Men's Classic Shirt",
   },
   {
     id: 32,
@@ -20,7 +18,6 @@ const kidsProducts = [
     price: "$49.99",
     oldPrice: "$80.00",
     image: "https://images.meesho.com/images/products/502686128/u1etp_512.avif?width=512",
-    alt: "Slim Fit Jeans",
   },
   {
     id: 33,
@@ -29,7 +26,6 @@ const kidsProducts = [
     price: "$99.99",
     oldPrice: "$150.00",
     image: "https://images.meesho.com/images/products/554273347/aylcc_512.avif?width=512",
-    alt: "Leather Jacket",
   },
   {
     id: 34,
@@ -38,7 +34,70 @@ const kidsProducts = [
     price: "$59.99",
     oldPrice: "$100.00",
     image: "https://images.meesho.com/images/products/543179963/g5poi_512.avif?width=512",
-    alt: "Casual Sneakers",
+  },
+  {
+    id: 35,
+    name: "Venton New Design Baby mosquito net foldable new Sleeping Bags & Togs",
+    description: "Venton New Design Baby mosquito net foldable new Sleeping Bags & Togs Versatile sneakers for comfort and style all day long.",
+    price: "$56.99",
+    oldPrice: "$100.00",
+    image: "https://images.meesho.com/images/products/181620737/g2ygr_512.avif?width=512",
+  },
+  {
+    id: 36,
+    name: "Mosquito Net for Baby",
+    description: "Mosquito Net for Baby, Safe & Easy Use , Color-Blue, Size : 135cmx65cmx65cm baby Mosquito Net",
+    price: "$49.99",
+    oldPrice: "$89.00",
+    image: "https://images.meesho.com/images/products/205969613/u9nwb_512.avif?width=512",
+  },
+  {
+    id: 37,
+    name: "Goyoku Modern Kids Caps",
+    description: "Goyoku Modern Kids Caps for Winter Soft 100% Woolen Caps for Baby Boys & Baby Girls (Products for New Born Baby 6 to 20 Month) Multicolor.",
+    price: "$59.99",
+    oldPrice: "$100.00",
+    image: "https://images.meesho.com/images/products/375757143/tdo88_512.avif?width=512",
+  },
+  {
+    id: 38,
+    name: "Goyoku Modern Kids Caps",
+    description: "Goyoku Modern Kids Caps for Winter Soft 100% Woolen Caps for Baby Boys & Baby Girls (Products for New Born Baby 6 to 20 Month) Multicolor",
+    price: "$59.99",
+    oldPrice: "$100.00",
+    image: "https://images.meesho.com/images/products/383855878/hohhl_512.avif?width=512",
+  },
+   {
+    id: 39,
+    name: "Boys combo set",
+    description: "Versatile sneakers for comfort and style all day long.",
+    price: "$59.99",
+    oldPrice: "$100.00",
+    image: "https://images.meesho.com/images/products/543179963/g5poi_512.avif?width=512",
+  },
+  {
+    id: 334,
+    name: "Venton New Design Baby mosquito net foldable new Sleeping Bags & Togs",
+    description: "Venton New Design Baby mosquito net foldable new Sleeping Bags & Togs Versatile sneakers for comfort and style all day long.",
+    price: "$56.99",
+    oldPrice: "$100.00",
+    image: "https://images.meesho.com/images/products/181620737/g2ygr_512.avif?width=512",
+  },
+  {
+    id: 333,
+    name: "Kidis Land Stylish Kids Clothing Sets",
+    description: "Premium kids cloting sets and style all day long",
+    price: "$99.99",
+    oldPrice: "$150.00",
+    image: "https://images.meesho.com/images/products/554273347/aylcc_512.avif?width=512",
+  },
+   {
+    id: 335,
+    name: "Fancy Boys Top & Bottom Sets",
+    description: "A timeless cotton shirt perfect for formal and casual occasions.",
+    price: "$29.99",
+    oldPrice: "$50.00",
+    image: "https://images.meesho.com/images/products/443187772/gtjgk_512.avif?width=512",
   },
 ];
 

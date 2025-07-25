@@ -12,7 +12,6 @@ const Home_KitchenProducts = [
     oldPrice: "$50.00",
     image:
       "https://images.meesho.com/images/products/354643588/mmxek_512.avif?width=512",
-    alt: "Knife ",
   },
   {
     id: 22,
@@ -22,7 +21,6 @@ const Home_KitchenProducts = [
     oldPrice: "$80.00",
     image:
       "https://images.meesho.com/images/products/224092807/bjr0t_512.avif?width=512",
-    alt: "compact Chopper",
   },
   {
     id: 23,
@@ -32,7 +30,6 @@ const Home_KitchenProducts = [
     oldPrice: "$150.00",
     image:
       "https://images.meesho.com/images/products/331337160/enuzv_512.avif?width=512",
-    alt: "cutter",
   },
   {
     id: 24,
@@ -42,7 +39,79 @@ const Home_KitchenProducts = [
     oldPrice: "$100.00",
     image:
       "https://images.meesho.com/images/products/393940265/dwmqx_512.avif?width=512",
-    alt: "cutting board",
+  },
+  {
+    id: 25,
+    name: "SAHAJA TRADERS PRESENT GALACE COTTON BEST SELLING Double BEDSHEETS KING SIZE",
+    description: "SAHAJA TRADERS PRESENT GALACE COTTON BEST SELLING Double BEDSHEETS KING SIZE(85*85) BEDSHEETS WITH 2 PILLOW COVER,FLAT BEDSHEETS , FANCY BEDSHEETS , COTTON BEDSHEETS ,POLYCOTTON BEDSHEETS,GALACE COTTON BEDSHEETS",
+    price: "$59.99",
+    oldPrice: "$100.00",
+    image:
+      "https://images.meesho.com/images/products/522359833/4ar91_512.avif?width=512",
+  },
+  {
+    id: 26,
+    name: "Multi size Food sealing clips",
+    description: "Multi size Food sealing clips | food bag clips| plastic food sealer for kitchen| bag clips| plastic sealing clips(Set of 18)",
+    price: "$29.99",
+    oldPrice: "$100.00",
+    image:
+      "https://images.meesho.com/images/products/440637041/pfg9s_512.avif?width=512",
+  },
+  {
+    id: 27,
+    name: "500ml 2 in 1 Olive Oil Sprayer and Oil Dispenser Bottle for Kitchen",
+    description: "500ml 2 in 1 Olive Oil Sprayer and Oil Dispenser Bottle for Kitchen, Glass Oil Bottle with Premium Nozzle, Oil Sprayer for Air Fryer, Salad,BBQ,Roasting (Multi Color) (Pack of 1)",
+    price: "$79.99",
+    oldPrice: "$100.00",
+    image:
+      "https://images.meesho.com/images/products/436444456/tyvjs_512.avif?width=512",
+  },
+  {
+    id: 28,
+    name: "Oven Top Cover",
+    description: "Oven Top Cover | Non-Woven Microwave Oven Top Cover with 4 Utility Pockets | Oven Cover for Kitchen Décor 14x36 inch",
+    price: "$19.99",
+    oldPrice: "$100.00",
+    image:
+      "https://images.meesho.com/images/products/541710664/8321z_512.avif?width=512",
+  },
+  {
+    id: 201,
+    name: "Ss knife set with chopping board",
+    description:
+      "Name : ss knife set with chopping board Color : Silver Material : Stainless Steel Net Quantity (N) : Pack Of 6 Product Breadth : 9 Cm Product Height : 1.5 Cm Product Length : 10 Cm Product Weight : 0.2 Type : Kitchen Knife Sets ss knife set with chopping board",
+    price: "$29.99",
+    oldPrice: "$50.00",
+    image:
+      "https://images.meesho.com/images/products/354643588/mmxek_512.avif?width=512",
+  },
+   {
+    id: 202,
+    name: "Trendy chopping board/cutting board/wood cutting board",
+    description: "Trendy chopping board/cutting board/wood WINGER Combo of straight peeler and and 2 vegetable cutter 2 in 1 Vegetable & Fruit Multi Cutter & Peeler",
+    price: "$59.99",
+    oldPrice: "$100.00",
+    image:
+      "https://images.meesho.com/images/products/393940265/dwmqx_512.avif?width=512",
+  },
+ 
+  {
+    id: 203,
+    name: "Compact Chopper with Blades effortlessly Chopping Big Size Kitchen",
+    description: "Chopper with Blades effortlessly Chopping Big Size Kitchen set with chopping board",
+    price: "$49.99",
+    oldPrice: "$80.00",
+    image:
+      "https://images.meesho.com/images/products/224092807/bjr0t_512.avif?width=512",
+  }, {
+    id: 204,
+    name: "SAHAJA TRADERS PRESENT GALACE COTTON BEST SELLING Double BEDSHEETS KING SIZE",
+    description: "SAHAJA TRADERS PRESENT GALACE COTTON BEST SELLING Double BEDSHEETS KING SIZE(85*85) BEDSHEETS WITH 2 PILLOW COVER,FLAT BEDSHEETS , FANCY BEDSHEETS , COTTON BEDSHEETS ,POLYCOTTON BEDSHEETS,GALACE COTTON BEDSHEETS",
+    price: "$59.99",
+    oldPrice: "$100.00",
+    image:
+      "https://images.meesho.com/images/products/522359833/4ar91_512.avif?width=512",
   },
 ];
 
