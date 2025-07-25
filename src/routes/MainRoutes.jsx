@@ -35,7 +35,10 @@ const MainRoutes = () => {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/trackOrder' element={<TrackOrder/>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/:id' element={<ProductInfo/>} />
+        <Route path='/products/:id' element={<ProductInfo/>} />
         <Route path='*' element={<PageNotFound/>}/>
+        
     </Routes>
     <Footer/>
     </>

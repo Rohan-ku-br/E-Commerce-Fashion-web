@@ -36,7 +36,8 @@ const categories = [
   },
 ];
 
-const menProducts = [
+const menProducts = [ 
+
   {
     id: 1,
     name: "Men's Classic Shirt",
@@ -182,7 +183,6 @@ const menProducts = [
     alt: "Casual Sneakers",
   },
 ];
-
 const womenProducts = [
   {
     id: 1,

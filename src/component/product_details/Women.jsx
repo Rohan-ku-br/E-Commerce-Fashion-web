@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const womenProducts = [
   {
-    id: 1,
+    id: 41,
     name: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set",
     description: "A timeless cotton shirt perfect for formal and casual occasions.",
     price: "$29.99",
@@ -13,7 +13,7 @@ const womenProducts = [
     alt: "Women's Classic Shirt",
   },
   {
-    id: 2,
+    id:42,
     name: "KURTI",
     description: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set",
     price: "$49.99",
@@ -22,7 +22,7 @@ const womenProducts = [
     alt: "Slim Fit Jeans",
   },
   {
-    id: 3,
+    id: 43,
     name: "Rayon Printed Kurta Set With Dupatta",
     description: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set Rayon Printed Kurta Set With Dupatta",
     price: "$99.99",
@@ -31,7 +31,7 @@ const womenProducts = [
     alt: "Leather Jacket",
   },
   {
-    id: 4,
+    id: 44,
     name: "Black Kurti",
     description: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set Rayon Printed Kurta Set With Dupatta",
     price: "$59.99",
@@ -88,7 +88,7 @@ const Women = () => {
                   }
                 }}
               >
-                <NavLink to={`/product/${product.id}`} className="block">
+                <  NavLink to={`/${product.id}`} className="block">
                   <div className="relative w-full aspect-[4/3] p-4 overflow-hidden border-b border-gray-200 bg-gray-50">
                     <img
                       src={product.image}

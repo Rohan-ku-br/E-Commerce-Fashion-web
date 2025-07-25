@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Home_KitchenProducts = [
   {
-    id: 1,
+    id: 21,
     name: "Ss knife set with chopping board",
     description:
       "Name : ss knife set with chopping board Color : Silver Material : Stainless Steel Net Quantity (N) : Pack Of 6 Product Breadth : 9 Cm Product Height : 1.5 Cm Product Length : 10 Cm Product Weight : 0.2 Type : Kitchen Knife Sets ss knife set with chopping board",
@@ -15,7 +15,7 @@ const Home_KitchenProducts = [
     alt: "Knife ",
   },
   {
-    id: 2,
+    id: 22,
     name: "Compact Chopper with Blades effortlessly Chopping Big Size Kitchen",
     description: "Chopper with Blades effortlessly Chopping Big Size Kitchen set with chopping board",
     price: "$49.99",
@@ -25,7 +25,7 @@ const Home_KitchenProducts = [
     alt: "compact Chopper",
   },
   {
-    id: 3,
+    id: 23,
     name: "WINGER Combo of straight peeler and and 2 vegetable cutter ",
     description: "WINGER Combo of straight peeler and and 2 vegetable cutter 2 in 1 Vegetable & Fruit Multi Cutter & Peeler",
     price: "$99.99",
@@ -35,7 +35,7 @@ const Home_KitchenProducts = [
     alt: "cutter",
   },
   {
-    id: 4,
+    id: 24,
     name: "Trendy chopping board/cutting board/wood cutting board",
     description: "Trendy chopping board/cutting board/wood WINGER Combo of straight peeler and and 2 vegetable cutter 2 in 1 Vegetable & Fruit Multi Cutter & Peeler",
     price: "$59.99",
@@ -94,7 +94,7 @@ const Home_Kitchen = () => {
                   }
                 }}
               >
-                <NavLink to={`/product/${product.id}`} className="block">
+                <NavLink to={`/${product.id}`} className="block">
                   <div className="relative w-full aspect-[4/3] p-4 overflow-hidden border-b border-gray-200 bg-gray-50">
                     <img
                       src={product.image}

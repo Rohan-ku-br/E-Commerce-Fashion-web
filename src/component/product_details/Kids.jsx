@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 // Sample men's fashion product data (replace with your API data)
 const kidsProducts = [
   {
-    id: 1,
+    id: 31,
     name: "Fancy Boys Top & Bottom Sets",
     description: "A timeless cotton shirt perfect for formal and casual occasions.",
     price: "$29.99",
@@ -14,7 +14,7 @@ const kidsProducts = [
     alt: "Men's Classic Shirt",
   },
   {
-    id: 2,
+    id: 32,
     name: "KEESOR Round Neck PRINTED T-shirt with Shorts | Boys Casual T-shirt Shorts Set",
     description: "Comfortable and stylish denim jeans for everyday wear.",
     price: "$49.99",
@@ -23,7 +23,7 @@ const kidsProducts = [
     alt: "Slim Fit Jeans",
   },
   {
-    id: 3,
+    id: 33,
     name: "Kidis Land Stylish Kids Clothing Sets",
     description: "Premium kids cloting sets and style all day long",
     price: "$99.99",
@@ -32,7 +32,7 @@ const kidsProducts = [
     alt: "Leather Jacket",
   },
   {
-    id: 4,
+    id: 34,
     name: "Boys combo set",
     description: "Versatile sneakers for comfort and style all day long.",
     price: "$59.99",
@@ -89,7 +89,7 @@ const Kids = () => {
                   }
                 }}
               >
-                <NavLink to={`/product/${product.id}`} className="block">
+                <NavLink to={`/${product.id}`} className="block">
                   <div className="relative w-full aspect-[4/3] p-4 overflow-hidden border-b border-gray-200 bg-gray-50">
                     <img
                       src={product.image}

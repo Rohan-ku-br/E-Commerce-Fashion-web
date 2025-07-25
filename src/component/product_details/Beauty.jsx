@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const beautyProducts = [
   {
-    id: 1,
+    id: 11,
     name: "All in one face makeup kit for women",
     description: "All in one face makeup kit for women, make in india, easy to use",
     price: "$29.99",
@@ -13,7 +13,7 @@ const beautyProducts = [
     alt: "Makeup kit",
   },
   {
-    id: 2,
+    id: 12,
     name: "Dhyota Silicone Eyeliner Tool for Women",
     description: "Dhyota Silicone Eyeliner Tool for Women – Multipurpose Eye Makeup Tool for Eyeliner",
     price: "$49.99",
@@ -22,7 +22,7 @@ const beautyProducts = [
     alt: "Eyeliner Tool for Women",
   },
   {
-    id: 3,
+    id: 13,
     name: "Fixer Spary ,Primer,Conceller,Beauty Blinder ( puff )",
     description: "Fixer Spary ,Primer,Conceller,Beauty Blinder for Women – Multipurpose Eye Makeup Tool for Eyeliner",
     price: "$99.99",
@@ -31,7 +31,7 @@ const beautyProducts = [
     alt: "Fixer spray",
   },
   {
-    id: 4,
+    id: 14,
     name: "Fixer Spray, Bottle Primer",
     description: "Fixer Spray, Bottle Primer, Foundation, Compact Powder, Countour stick",
     price: "$59.99",
@@ -88,7 +88,7 @@ const Beauty = () => {
                   }
                 }}
               >
-                <NavLink to={`/product/${product.id}`} className="block">
+                <NavLink to={`/${product.id}`} className="block">
                   <div className="relative w-full aspect-[4/3] p-4 overflow-hidden border-b border-gray-200 bg-gray-50">
                     <img
                       src={product.image}

@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const menProducts = [
+const menProducts = [ 
+
   {
     id: 1,
     name: "Men's Classic Shirt",

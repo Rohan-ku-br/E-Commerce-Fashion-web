@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Product = () => {
   const diffProduct = [
     {
-      id: "productInfo",
+      id: "71",
       name: "Single Breasted Formal Blazer",
       image:
         "https://plus.unsplash.com/premium_photo-1661400600986-b7493240cae2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -13,7 +13,7 @@ const Product = () => {
       price: "$129.99",
     },
     {
-      id: "productInfo",
+      id: "72",
       name: "Home & Kitchen Eco-Set",
       image:
         "https://images.unsplash.com/photo-1624988991840-2861588dbd6f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -21,7 +21,7 @@ const Product = () => {
       price: "$74.99",
     },
     {
-      id: "productInfo",
+      id: "73",
       name: "Women's Elegance Collection",
       image:
         "https://plus.unsplash.com/premium_photo-1673758905770-a62f4309c43c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -29,7 +29,7 @@ const Product = () => {
       price: "$89.99",
     },
     {
-      id: "productInfo",
+      id: "74",
       name: "Kids' Playwear",
       image:
         "https://plus.unsplash.com/premium_photo-1673356301514-2cad91907f74?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -37,7 +37,7 @@ const Product = () => {
       price: "$49.99",
     },
     {
-      id: "productInfo",
+      id: "75",
       name: "Natural Beauty Essentials",
       image:
         "https://plus.unsplash.com/premium_photo-1690349404224-53f94f20df8f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -45,7 +45,7 @@ const Product = () => {
       price: "$34.99",
     },
     {
-      id: "productInfo",
+      id: "76",
       name: "Home & Kitchen Eco-Set",
       image:
         "https://media.istockphoto.com/id/1269573617/photo/eco-friendly-cutlery-consisting-of-plates-bowls-trays-wooden-spoon-biodegradable-cutlery-for.jpg?s=2048x2048&w=is&k=20&c=nuGIqfYLj2qLQ9rGu3_teDYkPA2aajEY_2SpLBYw7Ds=",
@@ -53,7 +53,7 @@ const Product = () => {
       price: "$74.99",
     },
     {
-      id: "productInfo",
+      id: "77",
       name: "Home & Kitchen Eco-Set",
       image:
         "https://images.unsplash.com/photo-1567721913486-6585f069b332?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -61,7 +61,7 @@ const Product = () => {
       price: "$74.99",
     },
     {
-      id: "productInfo",
+      id: "78",
       name: "Home & Kitchen Eco-Set",
       image:
         "https://images.unsplash.com/photo-1527719327859-c6ce80353573?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHRzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
@@ -69,7 +69,7 @@ const Product = () => {
       price: "$74.99",
     },
     {
-      id: "productInfo",
+      id: "79",
       name: "Home & Kitchen Eco-Set",
       image:
         "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBqZWFuc3xlbnwwfHwwfHx8MA%3D%3D",
@@ -77,7 +77,7 @@ const Product = () => {
       price: "$74.99",
     },
     {
-      id: "productInfo",
+      id: "80",
       name: "Home & Kitchen Eco-Set",
       image:
         "https://images.unsplash.com/photo-1741943716275-2eaf11f4e918?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fHdvbWVuJTIwamVhbnN8ZW58MHx8MHx8fDA%3D",
@@ -86,7 +86,7 @@ const Product = () => {
     },
 
     {
-      id: "productInfo",
+      id: "81",
       name: "Home & Kitchen Eco-Set",
       image:
         "https://images.unsplash.com/photo-1571115637329-40ce3401d0f3?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -95,7 +95,7 @@ const Product = () => {
     },
 
     {
-      id: "productInfo",
+      id: "82",
       name: "Home & Kitchen Eco-Set",
       image:
         "https://images.unsplash.com/photo-1579892876770-461a88bd87df?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -134,6 +134,7 @@ const Product = () => {
                 }
               }}
             >
+            <NavLink to={`/${product.id}`} className="block">
               <div className="relative w-full aspect-[4/3] p-4 overflow-hidden border-b border-gray-200 bg-gray-50">
                 <img
                   src={product.image}
@@ -168,6 +169,7 @@ const Product = () => {
                   </span>
                 </div>
               </div>
+              </NavLink>
             </motion.div>
           ))}
         </div>
