@@ -135,10 +135,10 @@ const Home_Kitchen = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
-            Men's Fashion Collection
+            Home/Kitchen Collection
           </h2>
           <p className="text-gray-700 max-w-3xl mx-auto text-lg sm:text-xl leading-relaxed">
-            Discover stylish and high-quality men's fashion tailored to your
+            Discover stylish and high-quality fashion tailored to your
             lifestyle.
           </p>
         </div>
