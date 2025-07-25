@@ -3,15 +3,15 @@ import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const FounderProfile = () => {
   const founder = {
-    name: "Alex Green",
-    title: "Founder & Visionary",
+    name: "Vidit Aatrey",
+    title: "Meesho's co-founder and CEO",
     image:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    bio: "Alex Green is a dedicated innovator with a mission to revolutionize sustainable living. With 20 years of experience in green technology and product design, Alex founded this company to create eco-friendly solutions that inspire change. Their vision blends cutting-edge innovation with a deep commitment to environmental stewardship.",
+      "https://i0.wp.com/neon.fund/wp-content/uploads/2020/03/Meesho-CEO-Vidit-Aatrey.jpg?fit=1147%2C1000&ssl=1",
+    bio: "Meesho, an Indian e-commerce platform, was founded by Vidit Aatrey and Sanjeev Barnwal in December 2015. Both are graduates of the Indian Institute of Technology (IIT) Delhi. The company, originally named Fashnear Technologies Private Limited, was rebranded as Meesho (short for Meri Shop, meaning My Shop  in Hindi) in 2016 to focus on social commerce, enabling small businesses and individuals to sell products online via social media platforms like WhatsApp, Facebook, and Instagram. Vidit Aatrey serves as the CEO, while Sanjeev Barnwal is the CTO. Their vision is to democratize internet commerce by empowering small businesses and entrepreneurs across India",
     social: {
-      twitter: "https://twitter.com/alexgreen",
-      linkedin: "https://linkedin.com/in/alexgreen",
-      instagram: "https://instagram.com/alexgreen",
+      twitter: "https://x.com/viditaatrey?lang=mr",
+      linkedin: "https://www.linkedin.com/in/vidit-aatrey-a3639120/?originalSubdomain=in",
+      instagram: "https://www.instagram.com/viditaatrey/?hl=en",
     },
   };
 

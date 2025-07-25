@@ -1,12 +1,8 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-html,
-body {
-  
+html, body {  
   font-family: "Michroma", sans-serif;
 }
 
-/* src/JellyEffect.css */
 @keyframes jelly {
   0% {
     transform: scale(1, 1);

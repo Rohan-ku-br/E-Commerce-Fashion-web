@@ -2,147 +2,153 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-
 const Products = [
+  {
+    id: 71,
+    name: "Single Breasted Formal Blazer",
+    image:
+      "https://plus.unsplash.com/premium_photo-1661400600986-b7493240cae2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description:
+      "A sleek, sustainable men's blazer crafted for formal elegance.",
+    price: "$129.99",
+  },
+  {
+    id: 72,
+    name: "Home & Kitchen Eco-Set",
+    image:
+      "https://images.unsplash.com/photo-1624988991840-2861588dbd6f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description: "Eco-friendly essentials to elevate your home experience.",
+    price: "$74.99",
+  },
+  {
+    id: 73,
+    name: "Women's Elegance Collection",
+    image:
+      "https://plus.unsplash.com/premium_photo-1673758905770-a62f4309c43c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description: "Eco-friendly women's wear with a touch of sophistication.",
+    price: "$89.99",
+  },
+  {
+    id: 74,
+    name: "Kids' Playwear",
+    image:
+      "https://plus.unsplash.com/premium_photo-1673356301514-2cad91907f74?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description: "Durable and sustainable clothing for active little ones.",
+    price: "$49.99",
+  },
+  {
+    id: 75,
+    name: "Natural Beauty Essentials",
+    image:
+      "https://plus.unsplash.com/premium_photo-1690349404224-53f94f20df8f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description: "Organic beauty products for a radiant, natural glow.",
+    price: "$34.99",
+  },
+  {
+    id: 76,
+    name: "Home & Kitchen Eco-Set",
+    image:
+      "https://media.istockphoto.com/id/1269573617/photo/eco-friendly-cutlery-consisting-of-plates-bowls-trays-wooden-spoon-biodegradable-cutlery-for.jpg?s=2048x2048&w=is&k=20&c=nuGIqfYLj2qLQ9rGu3_teDYkPA2aajEY_2SpLBYw7Ds=",
+    description: "Eco-friendly essentials to elevate your home experience.",
+    price: "$74.99",
+  },
+  {
+    id: 77,
+    name: "Home & Kitchen Eco-Set",
+    image:
+      "https://images.unsplash.com/photo-1567721913486-6585f069b332?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description: "Eco-friendly essentials to elevate your home experience.",
+    price: "$74.99",
+  },
+  {
+    id: 78,
+    name: "Home & Kitchen Eco-Set",
+    image:
+      "https://images.unsplash.com/photo-1527719327859-c6ce80353573?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHRzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
+    description: "Eco-friendly essentials to elevate your home experience.",
+    price: "$74.99",
+  },
+  {
+    id: 79,
+    name: "Home & Kitchen Eco-Set",
+    image:
+      "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBqZWFuc3xlbnwwfHwwfHx8MA%3D%3D",
+    description: "Eco-friendly essentials to elevate your home experience.",
+    price: "$74.99",
+  },
+  {
+    id: 80,
+    name: "Home & Kitchen Eco-Set",
+    image:
+      "https://images.unsplash.com/photo-1741943716275-2eaf11f4e918?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fHdvbWVuJTIwamVhbnN8ZW58MHx8MHx8fDA%3D",
+    description: "Eco-friendly essentials to elevate your home experience.",
+    price: "$74.99",
+  },
 
-     {
-      id: 71,
-      name: "Single Breasted Formal Blazer",
-      image:
-        "https://plus.unsplash.com/premium_photo-1661400600986-b7493240cae2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description:
-        "A sleek, sustainable men's blazer crafted for formal elegance.",
-      price: "$129.99",
-    },
-    {
-      id: 72,
-      name: "Home & Kitchen Eco-Set",
-      image:
-        "https://images.unsplash.com/photo-1624988991840-2861588dbd6f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description: "Eco-friendly essentials to elevate your home experience.",
-      price: "$74.99",
-    },
-    {
-      id: 73,
-      name: "Women's Elegance Collection",
-      image:
-        "https://plus.unsplash.com/premium_photo-1673758905770-a62f4309c43c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description: "Eco-friendly women's wear with a touch of sophistication.",
-      price: "$89.99",
-    },
-    {
-      id: 74,
-      name: "Kids' Playwear",
-      image:
-        "https://plus.unsplash.com/premium_photo-1673356301514-2cad91907f74?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description: "Durable and sustainable clothing for active little ones.",
-      price: "$49.99",
-    },
-    {
-      id: 75,
-      name: "Natural Beauty Essentials",
-      image:
-        "https://plus.unsplash.com/premium_photo-1690349404224-53f94f20df8f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description: "Organic beauty products for a radiant, natural glow.",
-      price: "$34.99",
-    },
-    {
-      id: 76,
-      name: "Home & Kitchen Eco-Set",
-      image:
-        "https://media.istockphoto.com/id/1269573617/photo/eco-friendly-cutlery-consisting-of-plates-bowls-trays-wooden-spoon-biodegradable-cutlery-for.jpg?s=2048x2048&w=is&k=20&c=nuGIqfYLj2qLQ9rGu3_teDYkPA2aajEY_2SpLBYw7Ds=",
-      description: "Eco-friendly essentials to elevate your home experience.",
-      price: "$74.99",
-    },
-    {
-      id: 77,
-      name: "Home & Kitchen Eco-Set",
-      image:
-        "https://images.unsplash.com/photo-1567721913486-6585f069b332?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description: "Eco-friendly essentials to elevate your home experience.",
-      price: "$74.99",
-    },
-    {
-      id: 78,
-      name: "Home & Kitchen Eco-Set",
-      image:
-        "https://images.unsplash.com/photo-1527719327859-c6ce80353573?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHRzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
-      description: "Eco-friendly essentials to elevate your home experience.",
-      price: "$74.99",
-    },
-    {
-      id: 79,
-      name: "Home & Kitchen Eco-Set",
-      image:
-        "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBqZWFuc3xlbnwwfHwwfHx8MA%3D%3D",
-      description: "Eco-friendly essentials to elevate your home experience.",
-      price: "$74.99",
-    },
-    {
-      id: 80,
-      name: "Home & Kitchen Eco-Set",
-      image:
-        "https://images.unsplash.com/photo-1741943716275-2eaf11f4e918?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fHdvbWVuJTIwamVhbnN8ZW58MHx8MHx8fDA%3D",
-      description: "Eco-friendly essentials to elevate your home experience.",
-      price: "$74.99",
-    },
+  {
+    id: 81,
+    name: "Home & Kitchen Eco-Set",
+    image:
+      "https://images.unsplash.com/photo-1571115637329-40ce3401d0f3?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description: "Eco-friendly essentials to elevate your home experience.",
+    price: "$74.99",
+  },
 
-    {
-      id: 81,
-      name: "Home & Kitchen Eco-Set",
-      image:
-        "https://images.unsplash.com/photo-1571115637329-40ce3401d0f3?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description: "Eco-friendly essentials to elevate your home experience.",
-      price: "$74.99",
-    },
-
-    {
-      id: 82,
-      name: "Home & Kitchen Eco-Set",
-      image:
-        "https://images.unsplash.com/photo-1579892876770-461a88bd87df?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description: "Eco-friendly essentials to elevate your home experience.",
-      price: "$74.99",
-    },
+  {
+    id: 82,
+    name: "Home & Kitchen Eco-Set",
+    image:
+      "https://images.unsplash.com/photo-1579892876770-461a88bd87df?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description: "Eco-friendly essentials to elevate your home experience.",
+    price: "$74.99",
+  },
 
   {
     id: 11,
     name: "All in one face makeup kit for women",
-    description: "All in one face makeup kit for women, make in india, easy to use",
+    description:
+      "All in one face makeup kit for women, make in india, easy to use",
     price: "$29.99",
     oldPrice: "$50.00",
-    image: "https://images.meesho.com/images/products/463528812/eap3g_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/463528812/eap3g_512.avif?width=512",
     alt: "Makeup kit",
   },
   {
     id: 12,
     name: "Dhyota Silicone Eyeliner Tool for Women",
-    description: "Dhyota Silicone Eyeliner Tool for Women – Multipurpose Eye Makeup Tool for Eyeliner",
+    description:
+      "Dhyota Silicone Eyeliner Tool for Women – Multipurpose Eye Makeup Tool for Eyeliner",
     price: "$49.99",
     oldPrice: "$80.00",
-    image: "https://images.meesho.com/images/products/533957013/dh6bi_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/533957013/dh6bi_512.avif?width=512",
     alt: "Eyeliner Tool for Women",
   },
   {
     id: 13,
     name: "Fixer Spary ,Primer,Conceller,Beauty Blinder ( puff )",
-    description: "Fixer Spary ,Primer,Conceller,Beauty Blinder for Women – Multipurpose Eye Makeup Tool for Eyeliner",
+    description:
+      "Fixer Spary ,Primer,Conceller,Beauty Blinder for Women – Multipurpose Eye Makeup Tool for Eyeliner",
     price: "$99.99",
     oldPrice: "$150.00",
-    image: "https://images.meesho.com/images/products/425250690/rujzo_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/425250690/rujzo_512.avif?width=512",
     alt: "Fixer spray",
   },
   {
     id: 14,
     name: "Fixer Spray, Bottle Primer",
-    description: "Fixer Spray, Bottle Primer, Foundation, Compact Powder, Countour stick",
+    description:
+      "Fixer Spray, Bottle Primer, Foundation, Compact Powder, Countour stick",
     price: "$59.99",
     oldPrice: "$100.00",
-    image: "https://images.meesho.com/images/products/515832624/qcqsf_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/515832624/qcqsf_512.avif?width=512",
     alt: "Casual Sneakers",
   },
 
-   {
+  {
     id: 21,
     name: "Ss knife set with chopping board",
     description:
@@ -156,7 +162,8 @@ const Products = [
   {
     id: 22,
     name: "Compact Chopper with Blades effortlessly Chopping Big Size Kitchen",
-    description: "Chopper with Blades effortlessly Chopping Big Size Kitchen set with chopping board",
+    description:
+      "Chopper with Blades effortlessly Chopping Big Size Kitchen set with chopping board",
     price: "$49.99",
     oldPrice: "$80.00",
     image:
@@ -166,7 +173,8 @@ const Products = [
   {
     id: 23,
     name: "WINGER Combo of straight peeler and and 2 vegetable cutter ",
-    description: "WINGER Combo of straight peeler and and 2 vegetable cutter 2 in 1 Vegetable & Fruit Multi Cutter & Peeler",
+    description:
+      "WINGER Combo of straight peeler and and 2 vegetable cutter 2 in 1 Vegetable & Fruit Multi Cutter & Peeler",
     price: "$99.99",
     oldPrice: "$150.00",
     image:
@@ -176,7 +184,8 @@ const Products = [
   {
     id: 24,
     name: "Trendy chopping board/cutting board/wood cutting board",
-    description: "Trendy chopping board/cutting board/wood WINGER Combo of straight peeler and and 2 vegetable cutter 2 in 1 Vegetable & Fruit Multi Cutter & Peeler",
+    description:
+      "Trendy chopping board/cutting board/wood WINGER Combo of straight peeler and and 2 vegetable cutter 2 in 1 Vegetable & Fruit Multi Cutter & Peeler",
     price: "$59.99",
     oldPrice: "$100.00",
     image:
@@ -187,10 +196,12 @@ const Products = [
   {
     id: 31,
     name: "Fancy Boys Top & Bottom Sets",
-    description: "A timeless cotton shirt perfect for formal and casual occasions.",
+    description:
+      "A timeless cotton shirt perfect for formal and casual occasions.",
     price: "$29.99",
     oldPrice: "$50.00",
-    image: "https://images.meesho.com/images/products/443187772/gtjgk_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/443187772/gtjgk_512.avif?width=512",
     alt: "Men's Classic Shirt",
   },
   {
@@ -199,7 +210,8 @@ const Products = [
     description: "Comfortable and stylish denim jeans for everyday wear.",
     price: "$49.99",
     oldPrice: "$80.00",
-    image: "https://images.meesho.com/images/products/502686128/u1etp_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/502686128/u1etp_512.avif?width=512",
     alt: "Slim Fit Jeans",
   },
   {
@@ -208,7 +220,8 @@ const Products = [
     description: "Premium kids cloting sets and style all day long",
     price: "$99.99",
     oldPrice: "$150.00",
-    image: "https://images.meesho.com/images/products/554273347/aylcc_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/554273347/aylcc_512.avif?width=512",
     alt: "Leather Jacket",
   },
   {
@@ -217,53 +230,63 @@ const Products = [
     description: "Versatile sneakers for comfort and style all day long.",
     price: "$59.99",
     oldPrice: "$100.00",
-    image: "https://images.meesho.com/images/products/543179963/g5poi_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/543179963/g5poi_512.avif?width=512",
     alt: "Casual Sneakers",
   },
 
-   {
+  {
     id: 41,
     name: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set",
-    description: "A timeless cotton shirt perfect for formal and casual occasions.",
+    description:
+      "A timeless cotton shirt perfect for formal and casual occasions.",
     price: "$29.99",
     oldPrice: "$50.00",
-    image: "https://images.meesho.com/images/products/441070939/rzuyp_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/441070939/rzuyp_512.avif?width=512",
     alt: "Women's Classic Shirt",
   },
   {
-    id:42,
+    id: 42,
     name: "KURTI",
     description: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set",
     price: "$49.99",
     oldPrice: "$80.00",
-    image: "https://images.meesho.com/images/products/191005346/mocgn_512.avif?width=360",
+    image:
+      "https://images.meesho.com/images/products/191005346/mocgn_512.avif?width=360",
     alt: "Slim Fit Jeans",
   },
   {
     id: 43,
     name: "Rayon Printed Kurta Set With Dupatta",
-    description: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set Rayon Printed Kurta Set With Dupatta",
+    description:
+      "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set Rayon Printed Kurta Set With Dupatta",
     price: "$99.99",
     oldPrice: "$150.00",
-    image: "https://images.meesho.com/images/products/519996287/y5mid_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/519996287/y5mid_512.avif?width=512",
     alt: "Leather Jacket",
   },
   {
     id: 44,
     name: "Black Kurti",
-    description: "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set Rayon Printed Kurta Set With Dupatta",
+    description:
+      "Fabfairy Women Viscose Rayon Kurta Pant Dupatta Set Rayon Printed Kurta Set With Dupatta",
     price: "$59.99",
     oldPrice: "$100.00",
-    image: "https://images.meesho.com/images/products/397953982/lq6a2_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/397953982/lq6a2_512.avif?width=512",
     alt: "Casual Sneakers",
   },
-   {
+  {
     id: 1,
     name: "Men's Classic Shirt",
-    description: "A timeless cotton shirt perfect for formal and casual occasions.",
+    description:
+      "A timeless cotton shirt perfect for formal and casual occasions.",
     price: "$29.99",
     oldPrice: "$50.00",
-    image: "https://images.meesho.com/images/products/383857316/f4ypd_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/383857316/f4ypd_512.avif?width=512",
     alt: "Men's Classic Shirt",
   },
   {
@@ -272,7 +295,8 @@ const Products = [
     description: "Comfortable and stylish denim jeans for everyday wear.",
     price: "$49.99",
     oldPrice: "$80.00",
-    image: "https://images.meesho.com/images/products/503007534/bt8eo_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/503007534/bt8eo_512.avif?width=512",
     alt: "Slim Fit Jeans",
   },
   {
@@ -281,7 +305,8 @@ const Products = [
     description: "Premium leather jacket for a bold and rugged look.",
     price: "$99.99",
     oldPrice: "$150.00",
-    image: "https://images.meesho.com/images/products/481484866/xtrjc_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/481484866/xtrjc_512.avif?width=512",
     alt: "Leather Jacket",
   },
   {
@@ -290,16 +315,19 @@ const Products = [
     description: "Versatile sneakers for comfort and style all day long.",
     price: "$59.99",
     oldPrice: "$100.00",
-    image: "https://images.meesho.com/images/products/430702252/uigxu_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/430702252/uigxu_512.avif?width=512",
     alt: "Casual Sneakers",
   },
   {
     id: 5,
     name: "MEN SELF DESIGN POLO T SHIRT FOR MEN AND BOYS",
-    description: "A timeless cotton shirt perfect for formal and casual occasions.",
+    description:
+      "A timeless cotton shirt perfect for formal and casual occasions.",
     price: "$29.99",
     oldPrice: "$50.00",
-    image: "https://images.meesho.com/images/products/544486003/lhyv7_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/544486003/lhyv7_512.avif?width=512",
     alt: "Men's Classic Shirt",
   },
   {
@@ -308,7 +336,8 @@ const Products = [
     description: "Comfortable and stylish denim jeans for everyday wear.",
     price: "$49.99",
     oldPrice: "$80.00",
-    image: "https://images.meesho.com/images/products/563822664/osdem_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/563822664/osdem_512.avif?width=512",
     alt: "Slim Fit Jeans",
   },
   {
@@ -317,7 +346,8 @@ const Products = [
     description: "Premium leather jacket for a bold and rugged look.",
     price: "$99.99",
     oldPrice: "$150.00",
-    image: "https://images.meesho.com/images/products/538291130/ekbjj_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/538291130/ekbjj_512.avif?width=512",
     alt: "Leather Jacket",
   },
   {
@@ -326,16 +356,19 @@ const Products = [
     description: "Versatile sneakers for comfort and style all day long.",
     price: "$59.99",
     oldPrice: "$100.00",
-    image: "https://images.meesho.com/images/products/541471993/ag17k_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/541471993/ag17k_512.avif?width=512",
     alt: "Casual Sneakers",
   },
   {
     id: 9,
     name: "Men's Regular Fit Washed Full Sleeve Denim Jacket",
-    description: "A timeless cotton shirt perfect for formal and casual occasions.",
+    description:
+      "A timeless cotton shirt perfect for formal and casual occasions.",
     price: "$29.99",
     oldPrice: "$50.00",
-    image: "https://images.meesho.com/images/products/541117151/iwy7q_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/541117151/iwy7q_512.avif?width=512",
     alt: "Men's Classic Shirt",
   },
   {
@@ -344,7 +377,8 @@ const Products = [
     description: "Comfortable and stylish denim jeans for everyday wear.",
     price: "$49.99",
     oldPrice: "$80.00",
-    image: "https://images.meesho.com/images/products/542460767/3izor_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/542460767/3izor_512.avif?width=512",
     alt: "Slim Fit Jeans",
   },
   {
@@ -353,7 +387,8 @@ const Products = [
     description: "Premium leather jacket for a bold and rugged look.",
     price: "$99.99",
     oldPrice: "$150.00",
-    image: "https://images.meesho.com/images/products/122102209/f29yy_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/122102209/f29yy_512.avif?width=512",
     alt: "Leather Jacket",
   },
   {
@@ -362,16 +397,19 @@ const Products = [
     description: "Versatile sneakers for comfort and style all day long.",
     price: "$59.99",
     oldPrice: "$100.00",
-    image: "https://images.meesho.com/images/products/538637536/ch9kn_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/538637536/ch9kn_512.avif?width=512",
     alt: "Casual Sneakers",
   },
   {
     id: 13,
     name: "Men Denim Slim Fit Stretchable Jeans",
-    description: "A timeless cotton shirt perfect for formal and casual occasions.",
+    description:
+      "A timeless cotton shirt perfect for formal and casual occasions.",
     price: "$29.99",
     oldPrice: "$50.00",
-    image: "https://images.meesho.com/images/products/229299286/klpbs_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/229299286/klpbs_512.avif?width=512",
     alt: "Men's Classic Shirt",
   },
   {
@@ -380,7 +418,8 @@ const Products = [
     description: "Comfortable and stylish denim jeans for everyday wear.",
     price: "$49.99",
     oldPrice: "$80.00",
-    image: "https://images.meesho.com/images/products/493792935/dhcwr_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/493792935/dhcwr_512.avif?width=512",
     alt: "Slim Fit Jeans",
   },
   {
@@ -389,7 +428,8 @@ const Products = [
     description: "Premium leather jacket for a bold and rugged look.",
     price: "$99.99",
     oldPrice: "$150.00",
-    image: "https://images.meesho.com/images/products/497079521/3zaj0_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/497079521/3zaj0_512.avif?width=512",
     alt: "Leather Jacket",
   },
   {
@@ -398,10 +438,10 @@ const Products = [
     description: "Versatile sneakers for comfort and style all day long.",
     price: "$59.99",
     oldPrice: "$100.00",
-    image: "https://images.meesho.com/images/products/544213484/nmoqv_512.avif?width=512",
+    image:
+      "https://images.meesho.com/images/products/544213484/nmoqv_512.avif?width=512",
     alt: "Casual Sneakers",
   },
-
 ];
 
 const ProductInfo = () => {
@@ -429,9 +469,10 @@ const ProductInfo = () => {
   };
 
   const sizes = ["S", "M", "L", "XL"];
-  const relatedProducts = Products
-    .filter((p) => p.id !== parseInt(id))
-    .slice(0, 4);
+  const relatedProducts = Products.filter((p) => p.id !== parseInt(id)).slice(
+    0,
+    4
+  );
 
   if (!product) {
     return (
@@ -442,8 +483,12 @@ const ProductInfo = () => {
         className="min-h-screen bg-gray-100 flex items-center justify-center p-4"
       >
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Product Not Found</h2>
-          <p className="text-gray-600 mb-6">The product you're looking for doesn't exist.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Product Not Found
+          </h2>
+          <p className="text-gray-600 mb-6">
+            The product you're looking for doesn't exist.
+          </p>
           <Link
             to="/men"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300"
@@ -460,20 +505,11 @@ const ProductInfo = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8"
+      className="bg-gray-100 py-24 pt-27 px-4 sm:px-6 lg:px-8"
     >
       <div className="container mx-auto max-w-6xl">
-        {/* Breadcrumb Navigation */}
-        <nav className="mb-6 text-sm">
-          <Link to="/" className="text-blue-600 hover:underline">Home</Link>
-          <span className="mx-2">/</span>
-          <Link to="/men" className="text-blue-600 hover:underline">Men</Link>
-          <span className="mx-2">/</span>
-          <span className="text-gray-600">{product.name}</span>
-        </nav>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Product Image Gallery */}
           <div className="space-y-4">
             <motion.div
               initial={{ x: -50, opacity: 0 }}
@@ -495,22 +531,25 @@ const ProductInfo = () => {
               </motion.div>
             </motion.div>
             <div className="flex gap-2 justify-center">
-              {[product.image, product.image, product.image].map((img, index) => (
-                <motion.img
-                  key={index}
-                  src={img}
-                  alt={`${product.alt} thumbnail ${index + 1}`}
-                  className={`w-20 h-20 object-cover rounded-lg cursor-pointer border-2 ${
-                    currentImage === img ? "border-blue-600" : "border-transparent"
-                  }`}
-                  onClick={() => setCurrentImage(img)}
-                  whileHover={{ scale: 1.1 }}
-                />
-              ))}
+              {[product.image, product.image, product.image].map(
+                (img, index) => (
+                  <motion.img
+                    key={index}
+                    src={img}
+                    alt={`${product.alt} thumbnail ${index + 1}`}
+                    className={`w-20 h-20 object-cover rounded-lg cursor-pointer border-2 ${
+                      currentImage === img
+                        ? "border-blue-600"
+                        : "border-transparent"
+                    }`}
+                    onClick={() => setCurrentImage(img)}
+                    whileHover={{ scale: 1.1 }}
+                  />
+                )
+              )}
             </div>
           </div>
 
-          {/* Product Details */}
           <motion.div
             initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -522,20 +561,25 @@ const ProductInfo = () => {
                 {product.name}
               </h1>
               <div className="flex items-center gap-4 mb-4">
-                <span className="text-2xl font-bold text-green-600">{product.price}</span>
+                <span className="text-2xl font-bold text-green-600">
+                  {product.price}
+                </span>
                 {product.oldPrice && (
-                  <span className="text-lg text-gray-500 line-through">{product.oldPrice}</span>
+                  <span className="text-lg text-gray-500 line-through">
+                    {product.oldPrice}
+                  </span>
                 )}
               </div>
-              <p className="text-gray-600 mb-6 leading-relaxed">{product.description}</p>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                {product.description}
+              </p>
 
-              {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-6">
                 <motion.button
                   onClick={handleBuyNow}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300"
+                  className="bg-blue-600 text-white jelly-hover px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300"
                   aria-label="Buy now"
                 >
                   Buy Now
@@ -546,7 +590,7 @@ const ProductInfo = () => {
                   whileTap={{ scale: 0.95 }}
                   className={`${
                     isAddedToCart ? "bg-green-600" : "bg-gray-800"
-                  } text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-900 transition-colors duration-300 flex items-center justify-center`}
+                  } text-white px-6 py-3 rounded-lg font-medium jelly-hover hover:bg-gray-900 transition-colors duration-300 flex items-center justify-center`}
                   disabled={isAddedToCart}
                   aria-label={isAddedToCart ? "Added to cart" : "Add to cart"}
                 >
@@ -574,38 +618,52 @@ const ProductInfo = () => {
                 </motion.button>
               </div>
 
-              {/* Product Specifications */}
               <div className="mb-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Product Details</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  Product Details
+                </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
-                  <li>Material: {product.name.includes("Cotton") ? "100% Cotton" : product.name.includes("Denim") ? "Denim Blend" : "Premium Fabric"}</li>
-                  <li>Fit: {product.name.includes("Slim") ? "Slim Fit" : "Regular Fit"}</li>
+                  <li>
+                    Material:{" "}
+                    {product.name.includes("Cotton")
+                      ? "100% Cotton"
+                      : product.name.includes("Denim")
+                      ? "Denim Blend"
+                      : "Premium Fabric"}
+                  </li>
+                  <li>
+                    Fit:{" "}
+                    {product.name.includes("Slim") ? "Slim Fit" : "Regular Fit"}
+                  </li>
                   <li>Care Instructions: Machine washable, tumble dry low</li>
                   <li>Origin: Made in India</li>
                 </ul>
               </div>
 
-              {/* Shipping & Returns */}
               <div className="mb-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Shipping & Returns</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  Shipping & Returns
+                </h3>
                 <p className="text-gray-600">
-                  Free shipping on orders over $100. 30-day return policy for unused items.
+                  Free shipping on orders over $100. 30-day return policy for
+                  unused items.
                 </p>
               </div>
             </div>
           </motion.div>
         </div>
 
-        {/* Related Products */}
         <div className="mt-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Products</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            Related Products
+          </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {relatedProducts.map((related) => (
+            {relatedProducts.map((related, index) => (
               <motion.div
                 key={related.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 * related.id }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3, delay: 0.1 * index }}
                 className="bg-white rounded-lg shadow-md overflow-hidden"
               >
                 <Link to={`/product/${related.id}`}>
@@ -614,14 +672,23 @@ const ProductInfo = () => {
                     alt={related.alt}
                     className="w-full h-48 object-cover"
                     loading="lazy"
+                    fetchPriority="low"
                   />
                   <div className="p-4">
-                    <h3 className="text-lg font-semibold text-gray-900">{related.name}</h3>
-                    <p className="text-gray-600 text-sm line-clamp-2">{related.description}</p>
+                    <h3 className="text-lg font-semibold text-gray-900">
+                      {related.name}
+                    </h3>
+                    <p className="text-gray-600 text-sm line-clamp-2">
+                      {related.description}
+                    </p>
                     <div className="flex items-center gap-2 mt-2">
-                      <span className="text-green-600 font-bold">{related.price}</span>
+                      <span className="text-green-600 font-bold">
+                        {related.price}
+                      </span>
                       {related.oldPrice && (
-                        <span className="text-gray-500 line-through text-sm">{related.oldPrice}</span>
+                        <span className="text-gray-500 line-through text-sm">
+                          {related.oldPrice}
+                        </span>
                       )}
                     </div>
                   </div>
@@ -631,10 +698,13 @@ const ProductInfo = () => {
           </div>
         </div>
 
-        {/* Customer Reviews Placeholder */}
         <div className="mt-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Customer Reviews</h2>
-          <p className="text-gray-600">No reviews yet. Be the first to review this product!</p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            Customer Reviews
+          </h2>
+          <p className="text-gray-600">
+            No reviews yet. Be the first to review this product!
+          </p>
         </div>
       </div>
     </motion.section>

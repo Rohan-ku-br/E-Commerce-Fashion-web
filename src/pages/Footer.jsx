@@ -62,10 +62,10 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <Link
-                to="https://x.com/ecotrend"
+                to="https://x.com/viditaatrey?lang=mr"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="EcoTrend X"
+                aria-label="Deenbandhu X"
                 className="text-gray-300 hover:text-green-300 transition-colors duration-300"
               >
                 <motion.div
@@ -76,10 +76,10 @@ const Footer = () => {
                 </motion.div>
               </Link>
               <Link
-                to="https://instagram.com/ecotrend"
+                to="https://www.instagram.com/viditaatrey/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="EcoTrend Instagram"
+                aria-label="Deenbandhu Instagram"
                 className="text-gray-300 hover:text-green-300 transition-colors duration-300"
               >
                 <motion.div
@@ -90,10 +90,10 @@ const Footer = () => {
                 </motion.div>
               </Link>
               <Link
-                to="https://linkedin.com/company/ecotrend"
+                to="https://www.linkedin.com/in/vidit-aatrey-a3639120/?originalSubdomain=in"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="EcoTrend LinkedIn"
+                aria-label="Deenbandhu LinkedIn"
                 className="text-gray-300 hover:text-green-300 transition-colors duration-300"
               >
                 <motion.div
